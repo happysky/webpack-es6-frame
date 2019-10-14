@@ -1,7 +1,8 @@
 var path = require('path');
+var webpackMerge = require('webpack-merge')
 var webpackCommon = require('./webpack.common')
 
-module.exports = Object.assign(
+module.exports = webpackMerge(
     webpackCommon,
     {
         mode: 'development',
