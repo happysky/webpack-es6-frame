@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "//////notes:Custom port/////////": "npm run dev -- --port 8082",
         "dev": "webpack-dev-server --config webpack.dev.js --hot --useLocalIp",
-        "deploy": "webpack",
+        "deploy": "webpack --config webpack.prod.js",
         "babel-upgrade": "npx babel-upgrade --write"
     },
     "author": "",
