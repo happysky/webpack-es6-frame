@@ -27,10 +27,14 @@ module.exports = webpackMerge(
             },
             //noInfo:true,
             proxy: {
-                '/x/xx*': {
-                    target: 'https://x.x.x.com',
+                '/nwesqintegralpublic/*': {
+                    target: 'http://fuwu.rsj.beijing.gov.cn/',
                     changeOrigin: true,
-                    secure: false
+                    secure: false,
+                    headers: {
+                        referer: 'http://fuwu.rsj.beijing.gov.cn/nwesqintegralpublic/settleperson/settlePersonTable',
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                    }
                 }
             }
         }

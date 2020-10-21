@@ -1,3 +1,4 @@
+import jifenluohu  from './2020jifenluohu'
 function debounce(timeout){
     return (target, name, descriptor)=>{
         const oldVal = descriptor.value
