@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "//////notes:Custom port/////////": "npm run dev -- --port 8082",
-        "dev": "webpack-dev-server --config webpack.dev.js --hot --useLocalIp",
+        "dev": "webpack-dev-server --config webpack.dev.js --hot",
         "deploy": "webpack --config webpack.prod.js",
         "babel-upgrade": "npx babel-upgrade --write"
     },
@@ -32,11 +32,13 @@
         "@babel/plugin-syntax-import-meta": "^7.0.0",
         "@babel/preset-env": "^7.7.7",
         "@babel/preset-react": "^7.12.1",
+        "@webpack-cli/serve": "^2.0.5",
         "axios": "^0.20.0",
         "babel-loader": "^8.0.6",
-        "html-webpack-plugin": "^3.2.0",
-        "webpack": "^4.41.0",
-        "webpack-cli": "^3.3.9",
+        "html-webpack-plugin": "^5.6.0",
+        "webpack": "^5.90.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.2",
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
